@@ -98,3 +98,12 @@ print("Bonus", bonus)
 precos = [1500, 1000, 800, 2000]
 produtos = ["celular", "camera", "fone de ouvido", "monitor"]
 
+produto_procurado = input("Digite o produto que você deseja consultar: ")
+produto_procurado = produto_procurado.lower()
+
+if produto_procurado in produtos:
+    posicao = produtos.index(produto_procurado) # index = posição do produto na lista
+    preco = precos[posicao]
+    print(f" Produto: {produto_procurado} - Preço: {preco}")
+else:
+    print("Produto não encontrado, tente novamente!")
