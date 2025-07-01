@@ -57,7 +57,7 @@ for mes in vendas_23:
         faturamento_total_simulado += valor_22
     else:
         faturamento_total_simulado += valor_23
-    print(f"Variação do mês {mes}: {var_percentual:.1%}")
+    # print(f"Variação do mês {mes}: {var_percentual:.1%}")
 print(f"Faturamento total simulado: {faturamento_total_simulado}")
 
 
@@ -71,8 +71,3 @@ for mes in vendas_23:
     # print(f"Variação do mês {mes}: {var_percentual:.1%}")
 faturamento_total = sum(vendas_23.values())
 print(faturamento_total_simulado)
-
-# exercício
-# lista de produtos
-# lista de preços
-# lista de imposto
