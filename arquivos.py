@@ -1,10 +1,12 @@
 
 # arquivo = open("vendas.txt", "r") # r = ler
-
+# w = escrever dentro do arquivo
 # # fazer o que quiser com o arquivo
 
 # arquivo. close() # fechar o arquivo
 
+
+# with e melhor que o open porque ele fecha o arquivo automaticamente
 with open("vendas.txt", "r") as arquivo: # as arquivo é o nome da variável que vai receber o arquivo
     infos = arquivo.readlines() # readlines = ler o arquivo linha por linha é read = ler o arquivo inteiro
 vendas_totais = 0
