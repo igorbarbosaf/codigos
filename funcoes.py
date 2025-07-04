@@ -10,7 +10,7 @@ def calcular_imposto(preco, aliquota1=0.2, aliquota2=0.15, aliquota3=0.1): # fun
     else:
         imposto = preco * aliquota3
     print(f"Preço: {preco}, Imposto: {imposto}")
-    return imposto
+    return imposto # return = retorna o valor da função
 
 for preco in lista_precos: # chamando a função
     imposto = calcular_imposto(preco)

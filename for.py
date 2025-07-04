@@ -16,18 +16,18 @@ for preco in lista_precos:
 
 for preco in lista_precos:
     if preco > 1000:
-        imposto = preco * 0.15
+        imposto = preco * 0.15 # 0.15 = 15%
     else:
-        imposto = preco * 0.1
+        imposto = preco * 0.1 # 0.1 = 10%
     print(f"Preço: {preco} - Imposto: {imposto}")
 
 total_imposto = 0 # acumulado
 
 for preco in lista_precos:
     if preco > 1000:
-        imposto = preco * 0.15
+        imposto = preco * 0.15 # 0.15 = 15%
     else:
-        imposto = preco * 0.1
+        imposto = preco * 0.1 # 0.1 = 10%
     print(f"Preço: {preco} - Imposto: {imposto}")
     total_imposto += imposto
 
@@ -42,7 +42,7 @@ vendas_23 = {"jan": 17000, "fev": 15500, "mar": 17500, "abr": 16900, "mai": 1630
 for mes in vendas_23:
     valor_22 = vendas_22[mes]
     valor_23 = vendas_23[mes]
-    var_percentual = valor_23 / valor_22 -1
+    var_percentual = valor_23 / valor_22 -1 # variação percentual
     print(f"Mês: {mes} - Variação: {var_percentual:.1%}")
 
 

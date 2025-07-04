@@ -20,17 +20,17 @@ vendas = {
 # calcular o valor total de bonus pago e o bonus de cada vendedor
 
 def calcular_bonus(lista_vendas):
-    qtde = len(lista_vendas)
+    qtde = len(lista_vendas) # len = tamanho da lista
     bonus1 = qtde * 2
-    valor_total = sum(lista_vendas)
-    bonus2 = 0.01 * valor_total
+    valor_total = sum(lista_vendas) # sum = soma dos valores da lista
+    bonus2 = 0.01 * valor_total # 0.01 = 1%
     bonus = bonus1 + bonus2
 
-    return bonus
+    return bonus # return = retorna o valor da função
 bonus_total = 0 # acumulador
 for vendedor in vendas:
     lista_vendas_vendedor = vendas[vendedor]
-    bonus = calcular_bonus(lista_vendas_vendedor)
+    bonus = calcular_bonus(lista_vendas_vendedor) # chamando a função calcular_bonus
     print(f"Vendedor: {vendedor}, Bonus: {bonus}")
     bonus_total += bonus
 print(bonus_total)
